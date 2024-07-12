@@ -1,0 +1,48 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Converter calculator</Name>
+    <Description>&lt;No description available&gt;</Description>
+    <ProjectType>CandCPP</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Converter calculator</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Learning.cproj" File="Learning.cproj" ReplaceParameters="true">
+      <Folder Name="libm" TargetFolderName="libm" />
+      <Folder Name="APP" TargetFolderName="APP" />
+      <Folder Name="CFG" TargetFolderName="CFG">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DIO_Cfg.c">DIO_Cfg.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KeyPad_Cfg.h">KeyPad_Cfg.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LCD_Cfg.h">LCD_Cfg.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Motor_Cfg.h">Motor_Cfg.h</ProjectItem>
+      </Folder>
+      <Folder Name="HAL" TargetFolderName="HAL">
+        <ProjectItem ReplaceParameters="true" TargetFileName="KeyPad.c">KeyPad.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="KeyPad_Interface.h">KeyPad_Interface.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LCD.c">LCD.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LCD_Interface.h">LCD_Interface.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Motors.c">Motors.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Motors_Interface.h">Motors_Interface.h</ProjectItem>
+      </Folder>
+      <Folder Name="MCAL" TargetFolderName="MCAL">
+        <ProjectItem ReplaceParameters="true" TargetFileName="DIO.c">DIO.c</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DIO_Interface.h">DIO_Interface.h</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DIO_Private.h">DIO_Private.h</ProjectItem>
+      </Folder>
+      <Folder Name="SERVICES" TargetFolderName="SERVICES" />
+      <ProjectItem ReplaceParameters="true" TargetFileName="main.c">main.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="MemMap.h">MemMap.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Segment.c">Segment.c</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Segment.h">Segment.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="StdTypes.h">StdTypes.h</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Utils.h">Utils.h</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
